@@ -18,8 +18,18 @@
   <h1 class="main-title">Suicidios en el mundo</h1>
   <br><h2 class="main-autor">Nombre: Raúl Vargas Mendoza</h2>
   <h2 class="main-url">Url : <a href="https://js-p54y9k.stackblitz.io">https://js-p54y9k.stackblitz.io</a></h2>
-  <h2 class="main-fuente">Fuente : <a href="https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016#master.csv">https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016#master.csv</a></h2>
-  <h4 class="main-fecha">Fecha: 09/01/2020</h4>
+  <h2 class="main-fuente">Fuentes : </h2>
+    <ul>
+      <li>
+        Datos: <a href="https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016#master.csv">https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016#master.csv</a>
+      </li>
+      <li> POWER BI MAP & drillthrough-filtering : <a href="https://exceltown.com/en/tutorials/power-bi/powerbi-com-and-power-bi-desktop/power-bi-charts-and-visualization/drillthrough-filtering-simply/">https://exceltown.com/en/tutorials/power-bi/powerbi-com-and-power-bi-desktop/power-bi-charts-and-visualization/drillthrough-filtering-simply/</a></li>
+      <li>TABLEAU WEB PUBLISH: <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_workbooks_howto.htm">https://help.tableau.com/current/pro/desktop/en-us/publish_workbooks_howto.htm</a></li>
+      <li>D3 PYRAMID : <a href="http://vis.stanford.edu/jheer/d3/pyramid/">http://vis.stanford.edu/jheer/d3/pyramid/</a></li>
+      <li>CATÁLOGO DE VISUALIZACIÓN DE DATOS : <a href="https://datavizcatalogue.com/ES/buscar.html">https://datavizcatalogue.com/ES/buscar.html</a></li>
+    </ul>
+  
+  <h2 class="main-fecha">Fecha: 09/01/2020</h4>
     <br>
     <br>
 
@@ -27,13 +37,15 @@
     <div class="summary">
         <h2 class="text-title">Resumen</h2>
         <div class="text">
-          <b>El objetivo</b> de este proyecto es crear visualizaciones efectivas del conjunto de datos Ratios de suicidio de 1985 a 2015 que contiene la tasa de suicidios en varios paises del mundo en este periodo, contiene datos como el país, el año, el rango de edad, sexo, la cantidad de suicidios total, la cantidad de suicidios por cada 100,000 habitantes, entre otros.
+          <b>El objetivo</b> de este proyecto es realizar el seminario de la materia de visualización de datos utilizando tres herramientas diferentes, dos vistas en clase (Tableau y D3) y una nueva aprendida por mi cuenta (Power BI). Se crearon  visualizaciones efectivas del conjunto de datos Ratios de suicidio de 1985 a 2015 que contiene la tasa de suicidios en varios paises del mundo en este periodo, contiene datos como el país, el año, el rango de edad, sexo, la cantidad de suicidios total, la cantidad de suicidios por cada 100,000 habitantes, entre otros.
+          Se mostrarán gráficos a nivel mundial y por país, estos últimos serán interactivos.
+          
           <br>
           <br>
 
           <b>El mensaje</b> que me gustaría transmitir es que con el paso de tiempo, la cantidad de suicidios se ha ido incrementando en la mayoria de los países del mundo, y por ende, a nivel mundial, y son los hombres los que más cometen suicidio en casi todos los países.<br/><br/>
           <div class="metadato  " >
-            <b>La audiencia</b> es el público en general que se encuentre interesado en saber más acerca de los índices de suicidio y especialmente el profesor de la asignatura de Visualización de datos. El objetivo consiste en realizar el seminario de la materia de visualización de datos aplicando algunas técnicas y herramientas aprendidas durante la asignatura, más algunas adicionales que aprendí por mi cuenta.
+            <b>La audiencia</b> es el público en general que se encuentre interesado en saber más acerca de los índices de suicidio en el mundo, así como el profesor de la asignatura de Visualización de datos. 
           </div>
             </br>
             </br>
@@ -41,56 +53,85 @@
         </div>
     </div>
 <hr/>
-<h3>Mapa de paises donde ocurren suicidios<br><br></h3>
-Uso el Map para mostrar de manera gráfica y compacta los países del mundo donde ocurren suicidios, el tamaño del circulo es directamente proporcional al ratio de suicidios por cada 100,000 habitantes, demostrando cuales son los países donde hay una mayor tasa de suicidios.
-<br/>
-<br/>
-Técnicas de interactividad usadas:
-<ul>
-    <li>Brushing: Se usa en el zoom del mapa, al disminuir o aumentar el mismo se pueden visualizar sólo los países que interesen ver de manera más clara, o bien, visualizar todo el mapa en general.</li>
-    <li>Linking: Dando click derecho en una parte del mapa donde no haya puntos, se mostrará la opción de 'Tabla Visual', que mostrará los países ordenados de mayor a menor según su ratio de suicidios por cada 100,000 habitantes.</li>
-</ul> 
+<h2 class="text-title">Visualizaciones a nivel mundial</h2>
+
+
+<h3>Porcentaje de suicidios a nivel mundial por sexo.<br><br></h3>
+<b>Tipo de gráfico</b>
+<br/><br/>  
+Uso el gráfico de pastel para mostrar el porcentaje correspondiente de suicidios por sexo. 
 <br/><br/>
-Herramientas usadas:
+<b>Herramientas usadas:</b>
 <ul>
-  <li>
-El mapa lo elaboré con PowerBI aprovechando las bondades de la herramienta para crear y configurar los mapas de manera fácil y sobretodo es la única herramienta que me permitió publicarlos en WEB con la licencia de prueba de 60 días.<br/><br/>
+  <li>El gráfico lo elaboré utilizando <b>Tableau</b>, que fue una de las herramientas que vimos durante la clase, debido a que es muy fácil de utilizar y configurar, además permite publicar en web las visualizaciones.
+  <li>Utilicé <b>Tableau online</b> para publicar el gráfico en la WEB de manera gratuita.
   </li>
 </ul>
-<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiY2YzMWVjZjgtZjMzNy00OTk1LWE5ZDYtOTc3MTE1Y2E1ZjI2IiwidCI6IjAyNjc0ZWY5LTVjMmMtNDdkMC1iMmJjLTU5NWE3ODRkZGEwMCIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
-<br/>
-<a href="https://app.powerbi.com/view?r=eyJrIjoiY2YzMWVjZjgtZjMzNy00OTk1LWE5ZDYtOTc3MTE1Y2E1ZjI2IiwidCI6IjAyNjc0ZWY5LTVjMmMtNDdkMC1iMmJjLTU5NWE3ODRkZGEwMCIsImMiOjl9">El mapa interactivo se encuentra publicado aquí.</a>
-
-<hr/>
-
-<h3>Piramide de población<br><br></h3>
-Uso la piramide de población para mostrar como se distribuye la población que se suicida a nivel mundial, mostrando la cantidad
-de personas que cometen suicidio por sexo, rango de edad y año. 
 <br/><br/>
-Técnicas de interactividad usadas:
+
+<script type='text/javascript' src='https://prod-useast-a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1366px; height: 571px;'><object class='tableauViz' width='1366' height='571' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-useast-a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;datavisrvm' /><param name='name' value='visualizaciones&#47;Hoja4' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='showAppBanner' value='false' /></object></div>
+
+<b>Interpretaciones:</b>
+<ul>
+  <li>Observamos que la cantidad de suicidios del sexo masculino es muy superior a los del sexo femenino. </li>
+</ul>
+<br/>
+
+<h3>Evolución del número de suicidios a traves de los años.<br><br></h3>
+<b>Tipo de gráfico</b>
+<br/><br/>  
+Uso el gráfico de líneas para mostrar como es la evolución del número de suicidios a través de los años por cada sexo. 
+<br/><br/>
+<b>Herramientas usadas:</b>
+<ul>
+  <li>El gráfico lo elaboré utilizando <b>Tableau</b>, que fue una de las herramientas que vimos durante la clase, debido a que es muy fácil de utilizar y configurar, además permite publicar en web las visualizaciones.
+  <li>Utilicé <b>Tableau online</b> para publicar el gráfico en la WEB de manera gratuita.
+  </li>
+</ul>
+<br/><br/>
+
+<script type='text/javascript' src='https://prod-useast-a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1366px; height: 571px;'><object class='tableauViz' width='1366' height='571' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-useast-a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;datavisrvm' /><param name='name' value='visualizaciones&#47;Hoja3' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='showAppBanner' value='false' /></object></div>
+
+<b>Interpretaciones:</b>
+<ul>
+  <li>Observamos que la cantidad de suicidios a nivel mundial aumentó a lo largo de los años, excepto en los últimos años, donde se observa un ligero decrecimiento para el sexo masculino y se observa como se mantiene más o menos estable para el sexo femenino. </li>
+  <li>Observamos que la cantidad de suicidios del sexo masculino es muy superior a los del sexo femenino. </li>
+</ul>
+<br/>
+<h3>Distribución de la población fallecida a causa del suicidio.<br><br></h3>
+<b>Tipo de gráfico</b>
+<br/><br/>  
+Uso la piramide de población para mostrar como es la distribución por sexo, edad y año de la población que se suicida a nivel mundial. 
+<br/><br/>
+<b>Técnicas de interactividad usadas:</b>
 <ul>
     <li>Linking: Se usa para actualizar los datos de la piramide haciendo click en el año que se desea visualizar.</li>
 </ul>
-Herramientas usadas:
+<b>Herramientas usadas:</b>
 <ul>
-  <li>El gráfico lo elaboré utilizando D3, que fue una de las herramientas que vimos durante la clase, lo usé debido a que es muy flexible y permite elaborar gráficos complejos e interactivos como el caso de esta piramide
+  <li>El gráfico lo elaboré utilizando <b>D3</b>, que fue una de las herramientas que vimos durante la clase, lo usé debido a que es muy flexible y permite elaborar gráficos complejos e interactivos como el caso de esta piramide.
   </li>
-  <li>Utilicé Microsoft Excel para poder hacer una tabla dinámica y poder generar el JS que sirve como datasource a la piramide
+  <li>Utilicé <b>Microsoft Excel</b> para poder hacer una tabla dinámica y poder generar el JS que sirve como datasource a la piramide.
   </li>
-  <li>Utilicé AWS y Apache WebServer para publicar el gráfico en la WEB de manera gratuita.
+  <li>Utilicé <b>AWS</b> y <b>Apache WebServer</b> para publicar el gráfico en la WEB de manera gratuita.
   </li>
 </ul>
 <br/><br/>
 Notese que puede interactuar con la piramide de dos maneras: 
 <ol>
-    <li>Haciendo click en el año que se desea visualizar</li>
+    <li>Haciendo click en el año que se desea visualizar.</li>
     <li>Haciendo click en alguno de los botones de control para reproducir, ver siguiente o ver anterior.</li>
 </ol>
 <br/><br/>
 
 <iframe width="100%" height="600" src="http://ec2-54-234-231-24.compute-1.amazonaws.com/d3ex/pyramidsr.html" frameborder="0" allowFullScreen="true"></iframe>
 <br/>
-<br>**Nota: si no se visualiza bien el gráfico, intente lo siguiente en este orden:
+<b>Interpretaciones:</b>
+<ul>
+  <li>Observamos que en todos los rangos de edad, la cantidad de personas de sexo masculino que se suicidan es mayor que la cantidad de personas del sexo femenino. </li>
+  <li>Observamos que en todos los años, el rango de edad donde más hay suicidios es entre los 35 y 54 años, y el rango donde hay menos suicidios es entre los 5 y 14 años, para ambos sexos. </li>
+</ul>
+<br><b>**Nota:</b> si no se visualiza bien el gráfico, intente lo siguiente en este orden:
 <ol>
     <li>Revise si en la barra de dirección del navegador le estan notificando que se bloquearon scripts de fuentes no autorizadas,
         de ser así, por favor permita la ejecución de dichos scripts, corresponden a D3 para la interactividad de la piramide.
@@ -103,5 +144,62 @@ Notese que puede interactuar con la piramide de dos maneras:
 </ol>
 
 <br>
+
+
+<hr/>
+<h2 class="text-title">Visualizaciones por país</h2>
+<h3>Mapa de paises donde ocurren suicidios<br><br></h3>
+Uso un Map de tipo símbolos proporcionales para mostrar de manera gráfica y compacta todos los países del mundo de los que se tiene registro de suicidios, se muestra el ratio de suicidios por cada 100000 habitantes, mediante el uso del atributo tamaño del circulo demuestro cuales son los países donde hay una mayor tasa de suicidios.
+<br/>
+<br/>
+Técnicas de interactividad usadas:
+<ul>
+    <li>Brushing: 
+      <ul>
+        <li>Se usa en el zoom del mapa general, al disminuir o aumentar el mismo se pueden visualizar sólo los países que interesen ver de manera más clara, o bien, visualizar todo el mapa en general.</li>
+        <li>En los mapas de detalle, se puede seleccionar cada elemento de los gráficos, y se resaltarán de entre los demás. </li>
+      </ul>
+    <li>Linking:
+      <ul>
+        <li>Dando click derecho en una parte del mapa donde no haya puntos, se mostrará la opción de 'Tabla Visual', que mostrará los países ordenados de mayor a menor según su ratio de suicidios por cada 100,000 habitantes.</li>
+        <li>Dando click derecho en los puntos del mapa que representa a cada país, se mostrará la opción de 'Obtención de detalles' -> 'Detalle país', que abrirá un dashboard con los 4 diagramas de detalle:
+          <ul>
+            <li>Número de suicidios por rango de edad</li>
+              <ul>
+                <li>Tipo de gráfico: Uso un gráfico de barras horizontales para mostrar los números de suicidio por rango de edad ordenados de mayor a menor en ese determinado país.</li>
+              </ul>
+            <li>Número de suicidios por generación</li>
+              <ul>
+                <li>Tipo de gráfico: Uso un gráfico de pastel para mostrar la composición de la generación a la que pertenecían las personas que se suicidaron en ese determinado país.</li>
+              </ul>
+            <li>Número de suicidios por sexo en cada año</li>
+              <ul>
+                <li>Tipo de gráfico: Uso un gráfico de línea para mostrar como evoluciona el número de suicidios por cada sexo en ese determinado país.</li>
+              </ul>
+            <li>Número de suicidios por sexo</li>
+              <ul>
+                <li>Tipo de gráfico: Uso un gráfico de anillo para mostrar el porcentaje de el número de suicidios por cada sexo en ese determinado país.</li>
+              </ul>
+          </ul>
+        </li>
+        <li>Cada uno de los mapas de detalle permite la selección de sus categorias, al realizar dicha selección, actualizará el resto de diagramas de detalle aplicando como filtro la categoria seleccionada, de esta manera se creará dinámicamente una nueva subcategoria en cada diagrama resaltando los datos correspondientes a la categoria seleccionada.</li>
+      </ul>
+    </li>
+</ul> 
+<br/><br/>
+Herramientas usadas:
+<ul>
+  <li>
+El mapa lo elaboré con PowerBI aprovechando las bondades de la herramienta para crear y configurar los mapas de manera fácil y sobretodo es la única herramienta que me permitió publicarlos en WEB con la licencia de prueba de 60 días.<br/><br/>
+  </li>
+   <li>
+Los diagramas de detalle los elaboré con PowerBI aprovechando las bondades de la herramienta para crear y configurar diagramas enlazados utilizando la técnica drillthrough-filtering que me permitió usar el mapa de países como filtro para los diagramas de detalle, y a la vez me permitio que cada diagrama de detalle funcione como filtro para el resto.<br/><br/>
+  </li>
+</ul>
+<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiY2YzMWVjZjgtZjMzNy00OTk1LWE5ZDYtOTc3MTE1Y2E1ZjI2IiwidCI6IjAyNjc0ZWY5LTVjMmMtNDdkMC1iMmJjLTU5NWE3ODRkZGEwMCIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+<br/>
+<a href="https://app.powerbi.com/view?r=eyJrIjoiY2YzMWVjZjgtZjMzNy00OTk1LWE5ZDYtOTc3MTE1Y2E1ZjI2IiwidCI6IjAyNjc0ZWY5LTVjMmMtNDdkMC1iMmJjLTU5NWE3ODRkZGEwMCIsImMiOjl9">El mapa interactivo se encuentra publicado aquí.</a>
+
+
 <br>
 <hr/>
