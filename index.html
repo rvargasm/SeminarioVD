@@ -15,11 +15,10 @@
 </head>
 
 <body>
-  <br><h1 class="main-autor">Nombre: Raúl Vargas Mendoza</h1>
+  <h1 class="main-title">Suicidios en el mundo</h1>
+  <br><h2 class="main-autor">Nombre: Raúl Vargas Mendoza</h2>
   <h2 class="main-url">Url : <a href="https://js-p54y9k.stackblitz.io">https://js-p54y9k.stackblitz.io</a></h2>
   <h2 class="main-fuente">Fuente : <a href="https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016#master.csv">https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016#master.csv</a></h2>
-  <hr>
-  <h1 class="main-title">Suicidios en el mundo</h1>
   <h4 class="main-fecha">Fecha: 09/01/2020</h4>
     <br>
     <br>
@@ -42,7 +41,27 @@
         </div>
     </div>
 
-Mapa de suicidios a nivel mundial:<br><br>
-
+<h3>Mapa de paises donde ocurren suicidios<br><br></h3>
+Uso el Map para mostrar de manera gráfica y compacta los países del mundo donde ocurren suicidios, el tamaño del circulo es directamente proporcional al ratio de suicidios por cada 100,000 habitantes, demostrando cuales son los países donde hay una mayor tasa de suicidios. El mapa lo elaboré con PowerBI aprovechando las bondades de la herramienta para crear y configurar los mapas de manera fácil y sobretodo es la única herramienta que me permitió publicarlos en WEB con la licencia de prueba de 60 días.<br/><br/>
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiY2YzMWVjZjgtZjMzNy00OTk1LWE5ZDYtOTc3MTE1Y2E1ZjI2IiwidCI6IjAyNjc0ZWY5LTVjMmMtNDdkMC1iMmJjLTU5NWE3ODRkZGEwMCIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
-<!--<div id="app"></div>-->
+<br/>
+<a href="https://app.powerbi.com/view?r=eyJrIjoiY2YzMWVjZjgtZjMzNy00OTk1LWE5ZDYtOTc3MTE1Y2E1ZjI2IiwidCI6IjAyNjc0ZWY5LTVjMmMtNDdkMC1iMmJjLTU5NWE3ODRkZGEwMCIsImMiOjl9">El mapa interactivo se encuentra publicado aquí.</a>
+
+<hr/>
+
+<h3>Piramide de población<br><br></h3>
+Uso la piramide de población para mostrar como se distribuye la población que se suicida a nivel mundial, mostrando la cantidad
+de personas que cometen suicidio por sexo, rango de edad y año. El gráfico lo elaboré utilizando D3, hosteado en un WebServer de AWS, D3 fue una de las herramientas que vimos durante la clase debido a que es muy flexible y permite elaborar gráficos complejos e interactivos como el caso de esta piramide, notese que puede interactuar con la piramide de dos maneras: 
+<ol>
+    <li>Haciendo click en el año que se desea visualizar</li>
+    <li>Haciendo click en alguno de los botones de control para reproducir, ver siguiente o ver anterior.</li>
+</ol>
+<br/><br/>
+
+<iframe width="100%" height="600" src="http://ec2-54-234-231-24.compute-1.amazonaws.com/d3ex/pyramidsr.html" frameborder="0" allowFullScreen="true"></iframe>
+<br/>
+<a href="http://ec2-54-234-231-24.compute-1.amazonaws.com/d3ex/pyramidsr.html">El gráfico interactivo está publicado aquí</a>.
+<br>**Nota: si no se visualiza, informe al correo arch.rvm@gmail.com, ya que está hosteado en la capa gratuita de AWS y la IP y DNS cambian de dirección cada que la instancia de EC2 se reinicia.
+<br>
+<br>
+<hr/>
